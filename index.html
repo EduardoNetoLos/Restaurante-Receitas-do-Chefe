@@ -1,0 +1,90 @@
+<html>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Esse site todo segue um modelo só para que facilite a manipulação dele e permita que ele fique mais -->
+    <!-- bonito o possível aos olhos dos usuários, ainda tem alguns problemas de responsividade e alinhamento -->
+    <!-- em alguns elementos, porém como ele precisa ser feito em html puro sinto que seja muito difícil resolver -->
+    <!-- esses problemas com as ferramentas que foram dadas, então por favor capitão, não tira nota minha, tmj. ''-->
+    <body marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+        <table width="100%" height="100%" bgcolor="lightblue" border="1">
+            <tr height="10%">
+                <td colspan="5" align="center">
+                    <h1>Restaurante Receitas do Chefe</h1>
+                    <h2>O melhor restaurante da região do Araguaia!</h2>
+                </td>
+            </tr>
+            <!-- Barra do topo com todas as opções, esses "20%" são para manter ela organizado do jeito -->
+            <!-- que eu achei mais bonito e funcional.-->
+            <tr height="20" align="center">
+                <td width="20%"><a href="index.html"><h2>Sobre</h2></a></td>
+                <td width="20%"><a href="pamonhas.html"><h2>Pamonhas</h2></a></td>
+                <td width="20%"><a href="bolinhos.html"><h2>Bolinhos</h2></a></td>
+                <td width="20%"><a href="caldos.html"><h2>Caldos</h2></a></td>
+                <td width="20%"><a href="espetos.html"><h2>Espetinhos</h2></a></td>
+            </tr>
+            <!-- Parte em que fica o "Quem somos?" e o formulário de sugestão. -->
+            <tr>
+                <td height="20"colspan="4" align="center" bgcolor="white">
+                    <br>
+                    <h1 class="tituloPrincipal">Quem Somos?</h1>
+                    <br>
+                </td>
+                <td width="350" rowspan="2" bgcolor="lightblue" valign="top">
+                    <!-- Aqui iniciei um center que começa aqui em cima e termina lá em baixo -->
+                    <!-- para centralizar tudo de uma vez e evitar repetições desnecessárias. -->
+                    <center><h3 class="tituloFormulario">Tem alguma sugestão?</h3>
+                    <form class="formularioPrincipal">
+                        <!-- Utilizei da tag <input> para permitir a escrita nessa área-->
+                        <!-- para que o usuario consiga registrar o que ele quer escrever. -->
+                        <label for="nome">Seu nome:</label><br>
+                        <input type="text" id="nome" name="nome" size="30" required><br><br>
+
+                        <label for="numero">Seu número:</label><br>
+                        <input type="text" id="numero" name="numero" size="30" required><br><br>
+
+                        <label for="nome_receita">Nome da receita:</label><br>
+                        <input type="text" id="nome_receita" name="nome_receita" size="30" required><br><br>
+
+                        <!-- Foi usado <textarea> em vez de input nessa parte porque o textarea -->
+                        <!-- funciona melhor para esse tipo de texto, já que ele permite mais linhas. -->
+                        <label for="descricao">Descrição breve da receita:</label><br>
+                        <textarea id="descricao" name="descricao" rows="3" cols="30" required></textarea><br><br>
+
+                        <label for="motivacao">Motivação da ideia:</label><br>
+                        <textarea id="motivacao" name="motivacao" rows="2" cols="30" required></textarea><br><br>
+                        
+                        <!-- Botão de envio que "envia" as informações e as apaga para que possam ser -->
+                        <!-- escritas novas informações -->
+                        <div align="center">
+                            <input type="submit" value="Enviar sugestão">
+                        </div>
+                    </form>
+                                       
+                    <h2 class="numeroDeContato">Qualquer dúvida nos contate!</h2>
+                    <h2 class="numeroDeContato">(66) 9651-6136</h2>
+                    </center>
+
+                </td>
+            </tr>
+            <!-- Parte em que ficam os texto abaixo do "Quem somos". -->
+            <tr align="center" bgcolor="white">
+                <td colspan="4">
+                    <h2 class="textoPrincipal">
+                    O Restaurante Receitas do Chefe familiar que atua no ramo de alimentos há mais de π (3.141) anos, 
+                    oferecendo produtos frescos e de alta qualidade para seus clientes. Nossa missão é proporcionar 
+                    uma experiência gastronômica única, valorizando os sabores especiais. Afinal, somos mais que uma empresa, 
+                    somos uma família dedicada a levar o melhor da culinária para você!
+                    </h2>
+                    <h2 class="textoPrincipal">
+                    Nós estamos localizados na Rua Gleiner Rogerys, nº 690, Centro, Barra do Garças - MT.
+                    </h2>
+                    <h2 class="textoPrincipal">
+                    Venha nos visitar e conhecer nossa variedade de produtos e delícias caseiras! 
+                    Qualquer dúvida, entre em contato pelo telefone de trabalho (66) 9651-6136. Estamos ansiosos para te receber!
+                    </h2>
+                    <br><br>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
